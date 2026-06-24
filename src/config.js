@@ -99,3 +99,9 @@ const configHint = document.getElementById("config-hint");
 configHint.onmouseenter = () => {
     window.scrollTo(0, document.body.scrollHeight);
 }
+
+const configContainer = document.getElementById("config-container");
+
+configContainer.onmouseleave = () => {
+    window.scrollTo(0, 0);
+}

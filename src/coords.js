@@ -12,6 +12,8 @@
 
 import {Vector3} from '@math.gl/core';
 
+import {degToRad, radToDeg} from "./helpers.js"
+
 // physical constants
 const a = 6378137.0 // earth semi-major axis (m) (WGS_84)
 const f = 1/(298.257223563) // flattening factor (WGS_84)

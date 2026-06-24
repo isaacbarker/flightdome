@@ -118,6 +118,22 @@ function animate(time) {
     aircraftManager.drawAircraft();
 }
 
+// handle window resize
+function onWindowResize() {
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    // update camera
+    camera.aspect = width / height;
+    camera.updateProjectionMatrix();
+
+    // update renderer
+    renderer.setSize(width, height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+}
+
+window.addEventListener('resize', onWindowResize);
+
 // add centre dot
 const dot = document.createElement("div");
 dot.style.position = "absolute";
