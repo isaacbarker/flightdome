@@ -1,0 +1,19 @@
+{
+  "name": "skywatcher",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^8.0.12"
+  },
+  "dependencies": {
+    "@math.gl/core": "^4.1.0",
+    "three": "^0.184.0",
+    "troika-three-text": "^0.52.4"
+  }
+}

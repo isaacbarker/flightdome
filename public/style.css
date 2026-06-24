@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+  --bg: #232323;
+  --bg-dark: #171717;
+  --bg-highlight: #535353;
+  --text: #ffffff;
+  --highlight: #994fbd;
+}
+
+html, body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+          "wdth" 100;
+  font-size: smaller;
+  color: var(--text);
+  width: 100vw;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background-color: var(--bg);
+}
+
+.config__hint {
+  position: absolute;
+  box-sizing: border-box;
+  left: 0;
+  bottom: 0;
+  width: 0; height: 0;
+  border-style: solid;
+  border-width: 0px 25px 25px 0px;
+  border-color: transparent transparent var(--highlight) transparent;
+  transform: rotate(0deg);
+}
+
+.config__wrapper {
+  width: 100%;
+}
+
+.config__container {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg);
+  border-top: 2px solid var(--highlight);
+}
+
+.config__title {
+  margin: 0;
+  padding: 0 1em 0 1em;
+  font-style: italic;
+}
+
+.config__field {
+  display: flex;
+  align-items: center;
+  padding: 0 1em 0 1em;
+  height: 35px;
+  background-color: var(--bg-dark);
+  border-right: 1px solid var(--bg-highlight);
+}
+
+.config__input--rng {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  border-radius: .5rem;
+  background: var(--bg-highlight);
+  outline: none;
+  display: flex;
+}
+
+.config__input--rng::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: var(--highlight);
+  cursor: pointer;
+}
+
+.config__input--rng::-moz-range-thumb {
+  border: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 100%;
+  background: var(--highlight);
+  cursor: pointer;
+}
+
+.config__input--check {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: var(--bg);
+  margin: 0;
+  font: inherit;
+  color: var(--bg-highlight);
+  width: 1.15em;
+  height: 1.15em;
+  border: 0.15em solid var(--bg-highlight);
+  border-radius: .5rem;
+  transform: translateY(-0.075em);
+  display: grid;
+  place-content: center;
+}
+
+.config__input--check::before {
+  content: "";
+  width: 0.65em;
+  height: 0.65em;
+  border-radius: .5rem;
+  transform: scale(0);
+  transition: 120ms transform ease-in-out;
+  box-shadow: inset 1em 1em var(--highlight);
+}
+
+.config__input--check:checked::before {
+  transform: scale(1);
+}
+
+.config__input--btn {
+  background-color: var(--highlight);
+  border: none;
+  color: var(--text);
+  border-radius: .5rem;
+  padding: 0.5em;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.config__label {
+  padding-right: .5em;
+}

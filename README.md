@@ -1,0 +1,1 @@
+Airplane by MHDK from <a href="https://thenounproject.com/browse/icons/term/airplane/" target="_blank" title="Airplane Icons">Noun Project</a> (CC BY 3.0)

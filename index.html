@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="plane.svg" type="image/svg" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="/src/main.js"></script>
+    <title>FlightDome</title>
+  </head>
+  <body>
+    <div class="canvas__wrapper" id="canvas__wrapper"></div>
+    <div class="config__hint" id="config-hint"></div>
+    <div class="config__wrapper">
+      <div class="config__container">
+        <h2 class="config__title">FlightDome</h2>
+        <div class="config__field">
+          <p class="config__label">Heading</p>
+          <input type="range" min="0" max="360" value="0" id="north-alignment" class="config__input config__input--rng" />
+        </div>
+        <div class="config__field">
+          <p class="config__label">Inverted</p>
+          <input type="checkbox" id="inverted" class="config__input config__input--check" />
+        </div>
+        <div class="config__field">
+          <p class="config__label">Models</p>
+          <input type="checkbox" id="models" class="config__input config__input--check" value="true"/>
+        </div>
+        <div class="config__field">
+          <p class="config__label">Scale</p>
+          <input type="range" min="10" max="5000" value="3000" id="scale" class="config__input config__input--rng" />
+        </div>
+        <div class="config__field">
+          <p class="config__label">FOV</p>
+          <input type="range" min="45" max="180" value="140" id="fov" class="config__input config__input--rng" />
+        </div>
+        <div class="config__field">
+          <input type="button" value="Reset to Default" id="reset" class="config__input config__input--btn" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
