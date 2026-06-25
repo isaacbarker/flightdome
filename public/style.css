@@ -48,6 +48,7 @@ html, body {
 .config__container {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   background-color: var(--bg);
   border-top: 3px solid var(--highlight);
 }
@@ -56,6 +57,7 @@ html, body {
   margin: 0;
   padding: 0 1em 0 1em;
   font-style: italic;
+  text-align: center;
 }
 
 .config__field {
